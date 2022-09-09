@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MaterialDesign" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/amber_600</item>
+        <item name="colorPrimaryVariant">@color/amber_dark</item>
+        <item name="colorOnPrimary">@color/text_black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/deep_orange_100</item>
+        <item name="colorSecondaryVariant">@color/deep_orange_dark</item>
+        <item name="colorOnSecondary">@color/text_black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="bottomNavigationStyle">@style/Widget.MaterialDesign.BottomNavigationView</item>
+    </style>
+
+    <style name="Widget.MaterialDesign.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MaterialDesign.BottomNavigationView
+        </item>
+    </style>
+
+    <style name="ThemeOverlay.MaterialDesign.BottomNavigationView" parent="">
+        <item name="colorPrimary">@color/deep_orange_100</item>
+        <item name="colorSurface">@color/deep_orange_light</item>
+        <item name="colorOnSurface">@color/deep_orange_dark</item>
+    </style>
+
+    <style name="TextAppearance.MaterialComponents.Body2" parent="ThemeOverlay.MaterialDesign.BottomNavigationView">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.Snackbar.TextView" parent="ThemeOverlay.MaterialDesign.BottomNavigationView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>
